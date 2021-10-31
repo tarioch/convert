@@ -1,5 +1,8 @@
 FROM ubuntu:latest
 
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=Europe/Zurich
+
 RUN apt update && \
     apt upgrade -y && \
     apt install -y \
